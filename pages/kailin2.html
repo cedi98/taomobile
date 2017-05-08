@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/swipeopen.js">
+    
+//$( document ).on( "pageinit", "#kailin", function() {
+    //$( document ).on( "swipeleft swiperight", "#kailin", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        //if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+         //   if ( e.type === "swipeleft"  ) {
+             //   $( "#right-panel" ).panel( "open" );
+          //  } else if ( e.type === "swiperight" ) {
+             //   $( "#kailin_panel" ).panel( "open" );
+           // }
+       // }
+   // });
+// });</script>
+</head>
+<body>
+
+
+<div data-role="page" id="kailin" data-theme="d" data-url="kailin">
+     <div data-role="header" id="bgim">
+        <h1>
+          <a href="../index.html"><img src="../images/taologo.png" alt="Scott Sampson" style="width: 100%"></a>
+          <p>Contemporary</p>
+        </h1>
+		
+        
+     </div>
+     
+     <div data-role="main" class="ui-content">
+             <h1 style="text-align: center"><p>Zhao Kailin</p></h1>
+             <p styles="text-align: justify">Zhao Kailin was born in 1961 China. 1988, he studied at Oil Painting Department of Central Academy of Fine Arts. Now he lives in China. <a href="kailinBiography.html">Biography</a></p>
+     </div>
+
+     <div data-role="main" class="ui-content">
+             <img src="../images/bluedream.jpg" style="width: 100%">
+             <p>Bluedream</p>
+     </div>
+     <div data-role="main" class="ui-content">
+             <img src="../images/sm.jpg" style="width: 100%">
+             <p>Summer Morning</p>
+     </div>
+     <div data-role="main" class="ui-content">
+             <img src="../images/bythedoor.jpg" style="width: 100%">
+             <p>Qi Qi by The Door</p>
+     </div>
+<div data-role="footer">
+    <h1></h1>
+  </div>
+  
+    <div data-role="panel" data-position-fixed="true" id="kailin_panel" data-display="push" data-position="left">
+        <a href="artists.html">
+             <img src="../images/taologo.png" alt="Scott Sampson" style="">
+        </a>
+
+
+      <div  data-role="content" id="navigation">
+        <ul>
+              <li><a href="pages/artists.html" data-rel="Artist">Artists</a></li>
+             <li><a href="pages/recent_arrivals.html" data-rel="Recent Arivals">Recent Arivals</a></li>
+             <li><a href="pages/exhibitions.html" data-rel="Exhibiions">Exhibiions</a></li>
+             <li><a href="pages/maps.html" data-rel="Visit">Visit</a></li>
+             <li><a href="https://www.google.com" data-rel="Publications">Publications</a></li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+   <div data-role="main">
+    <a href="https://twitter.com/TaoWaterGallery"><img src="../images/twitter.ico" style="width: 40%; float: left;"></a>
+  </div>
+  <div data-role="main">
+    <a href="https://www.facebook.com/TaoWaterArtGallery?ref=bookmarks"><img src="../images/facebook.ico" style="width: 40%; float: right;"></a>
+  </div>
+    </div>
+
+</div>
+
+
+
+   
+  
+
+
+</body>
+</html>
